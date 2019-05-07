@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="gaming.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Re-type your  Password:</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <hr>
+    <div class="wrapper">
+            <div class="container">
+                <article class="part card-details">
+                    <h1>
+                        Credit Card Details
+                    </h1>
+                    <form action="" if="cc-form" autocomplete="off">
+                        <div class="group card-number">
+                            <label for="first">Card Number</label>
+                            <input type="text" id="first" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                            <input type="text" id="second" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                            <input type="text" id="third" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                            <input type="text" id="fourth" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                        </div>
+                        <div class="group card-name">
+                            <label for="name">Name On Card</label>
+                            <input type="text" id="name" class="" type="text" maxlength="20" placeholder="Name Surname">
+                        </div>
+                        <div class="group card-expiry">
+                            <div class="input-item expiry">
+                                <label for="expiry">Expiry Date</label>
+                                <input type="text" class="month" id="expiry" placeholder="02">
+                                <input type="text" class="year" id="" placeholder="2017">
+                            </div>
+                            <div class="input-item csv">
+                                <label for="csv">CSV No.</label><a href="#what">?</a>
+                                <input type="text" class="csv">
+                            </div>
+                        </div>
+                        <div class="grup submit-group">
+                            <span class="arrow"></span>
+                            <input type="submit" class="submit" value="Continue to payment">
+                        </div>
+                    </form>
+                </article>
+                <div class="part bg"></div>
+            </div>
+        </div>
+       
+
+ <h1>OTHER PAYMENT OPTIONS</h1>       
+ PAYPAL PAYMENT 
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="BF7T6TS6G8LTW" />
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <input type="hidden" name="on0" value="Purchase options" />Purchase options
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select name="os0">
+              <option value="Thank you">Pay $5.00</option> 
+              <option value="Thank you">Pay $10.00</option> 
+              <option value="Thank you">Pay $15.00</option> 
+              <option value="Thank you">+$20.00</option> 
+              
+
+             
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="hidden" name="currency_code" value="USD" />
+    <input type="image" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" />
+    <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" border="0" />
+  </form>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+      <p>TIP: It is a good idea to write down your password!</p>
+    <p>Do you already have a account? <a href="#">Sign in</a>.</p>
+   
+  </div>
+</form>
+</body>
+</html>
